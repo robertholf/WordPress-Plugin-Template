@@ -61,7 +61,7 @@ License: None
 	require_once( RBPlugin_PLUGIN_DIR .'lib/RBPlugin-Update.php'); // Update Specific
 		add_action( 'init', 'update_check' );
 			function update_check() {
-				new wp_auto_update (RBPlugin_VERSION, RBPlugin_LICENSE_PATH, RBPlugin_SLUG);
+				new RBPlugin_Update (RBPlugin_VERSION, RBPlugin_LICENSE_PATH, RBPlugin_SLUG);
 			}
 
 	require_once( RBPlugin_PLUGIN_DIR .'lib/RBPlugin-Common.php'); // Common Functions
