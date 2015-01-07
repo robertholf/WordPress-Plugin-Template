@@ -13,25 +13,25 @@ class RBPlugin_Update {
 	 * @var string
 	 */
 	public $current_version;
-
+ 
 	/**
 	 * The plugin remote update path
 	 * @var string
 	 */
 	public $update_path;
-
+ 
 	/**
 	 * Plugin Slug (plugin_directory/plugin_file.php)
 	 * @var string
 	 */
 	public $plugin_slug;
-
+ 
 	/**
 	 * Plugin name (plugin_file)
 	 * @var string
 	 */
 	public $slug;
-
+ 
 	/**
 	 * Initialize a new instance of the WordPress Auto-Update class
 	 * @param string $current_version
@@ -54,7 +54,7 @@ class RBPlugin_Update {
 
 		
 	}
-
+ 
 	/**
 	 * Add our self-hosted autoupdate plugin to the filter transient
 	 *
@@ -78,10 +78,7 @@ class RBPlugin_Update {
 			$obj->package = $this->update_path;
 			$transient->response[$this->plugin_slug] = $obj;
 		}
-<<<<<<< HEAD
 		//var_dump(array("transient triggered" => $transient));
-=======
->>>>>>> origin/master
 
 		return $transient;
 	}
@@ -100,13 +97,13 @@ class RBPlugin_Update {
 			return $information;
 		}
 		
-		/* 
-		 * Return variable $false instead of explicitly returning boolean FALSE
-		 * wordpress passes FALSE here by default
-		 */
-			return $false;
+	/** 
+	* Return variable $false instead of explicitly returning boolean FALSE
+	* wordpress passes FALSE here by default
+	*/
+            return $false;
 	}
-
+ 
 	/**
 	 * Return the remote version
 	 * @return string $remote_version
@@ -118,7 +115,7 @@ class RBPlugin_Update {
 		}
 		return false;
 	}
-
+ 
 	/**
 	 * Get information about the remote version
 	 * @return bool|object
@@ -130,7 +127,7 @@ class RBPlugin_Update {
 		}
 		return false;
 	}
-
+ 
 	/**
 	 * Return the status of the plugin licensing
 	 * @return boolean $remote_license
