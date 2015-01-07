@@ -78,7 +78,7 @@ class RBPlugin_Update {
 			$obj->package = $this->update_path;
 			$transient->response[$this->plugin_slug] = $obj;
 		}
-		var_dump(array("transient triggered" => $transient));
+		//var_dump(array("transient triggered" => $transient));
 
 		return $transient;
 	}
