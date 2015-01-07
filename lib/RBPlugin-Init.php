@@ -15,7 +15,7 @@ class RBPlugin_Init {
 	 * 
 	 */
 
-		public function init(){
+		public static function init(){
 
 			/*
 			 * Internationalization

@@ -14,7 +14,7 @@ class RBPlugin_Admin {
 	 * Initialize
 	 */
 
-		public function admin_init(){
+		public static function admin_init(){
 
 			// Check if Admin
 			if ( is_admin() ){
@@ -78,7 +78,7 @@ class RBPlugin_Admin {
 	 * Define Admin Styles
 	 */
 
-		function RBPlugin_admin_head() {
+		public static function RBPlugin_admin_head() {
 			// Ensure we are in the admin section of wordpress
 			if( is_admin() ) {
 
