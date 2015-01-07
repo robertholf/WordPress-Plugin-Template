@@ -78,7 +78,10 @@ class RBPlugin_Update {
 			$obj->package = $this->update_path;
 			$transient->response[$this->plugin_slug] = $obj;
 		}
+<<<<<<< HEAD
 		//var_dump(array("transient triggered" => $transient));
+=======
+>>>>>>> origin/master
 
 		return $transient;
 	}
@@ -97,11 +100,11 @@ class RBPlugin_Update {
 			return $information;
 		}
 		
-		   /** 
-			* Return variable $false instead of explicitly returning boolean FALSE
-			* wordpress passes FALSE here by default
-			*/
-            return $false;
+		/* 
+		 * Return variable $false instead of explicitly returning boolean FALSE
+		 * wordpress passes FALSE here by default
+		 */
+			return $false;
 	}
  
 	/**
