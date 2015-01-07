@@ -93,7 +93,12 @@ class RBPlugin_Update {
 			$information = $this->getRemote_information();
 			return $information;
 		}
-		return false;
+		
+		   /** 
+			* Return variable $false instead of explicitly returning boolean FALSE
+			* wordpress passes FALSE here by default
+			*/
+            return $false;
 	}
  
 	/**
