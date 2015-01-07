@@ -1,0 +1,9 @@
+// ==========================================================================
+// Menu Icons
+// ==========================================================================
+
+#toplevel_page_plugin div.wp-menu-image { background:transparent url(../../../assets/plugin_icon_grey.png) no-repeat scroll; } 
+#toplevel_page_plugin.opensub div.wp-menu-image { background:transparent url(../../../assets/plugin_icon.png) no-repeat scroll; } 
+#toplevel_page_plugin.wp-has-current-submenu div.wp-menu-image,
+#toplevel_page_plugin.current div.wp-menu-image { background: transparent url(../../../assets/plugin_icon.png) no-repeat scroll; } 
+
