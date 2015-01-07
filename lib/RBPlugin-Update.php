@@ -47,12 +47,12 @@ class RBPlugin_Update {
 		$this->slug = str_replace('.php', '', $t2);
 
 		// define the alternative API for updating checking
-		add_filter('pre_set_site_transient_update_plugins', array(&$this, 'check_update'));
+		add_filter('pre_set_site_transient_update_plugins', array($this, 'check_update'));
  
 		// Define the alternative response for information checking
-		add_filter('plugins_api', array(&$this, 'check_info'), 10, 3);
+		add_filter('plugins_api', array($this, 'check_info'), 10, 3);
 
-		var_dump($this->getRemote_information());
+		
 	}
  
 	/**
@@ -78,7 +78,8 @@ class RBPlugin_Update {
 			$obj->package = $this->update_path;
 			$transient->response[$this->plugin_slug] = $obj;
 		}
-		
+		var_dump(array("transient triggered" => $transient));
+
 		return $transient;
 	}
  
