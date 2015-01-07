@@ -56,22 +56,16 @@ License: None
 	require_once( RBPlugin_PLUGIN_DIR .'lib/RBPlugin-Init.php'); // WP Related
 		add_action( 'init', array('RBPlugin_Init', 'init') ); // Menu/Internationalization etc.
 
+	require_once( RBPlugin_PLUGIN_DIR .'lib/RBPlugin-Update.php'); // Admin Specific
+		// Check if new version available
+
 	require_once( RBPlugin_PLUGIN_DIR .'lib/RBPlugin-Common.php'); // Common Functions
 
 
 	require_once( RBPlugin_PLUGIN_DIR .'lib/RBPlugin-Admin.php'); // Admin Specific
 		add_action( 'init', array('RBPlugin_Admin', 'admin_init') ); // Menu/Internationalization etc.
 
-/*
-	require_once( RBPlugin_PLUGIN_DIR .'lib/RBPlugin-App.php'); // App Specific
-		add_action( 'init', array('RBPlugin_App', 'post_type') ); // Define Post Type
-		add_action( 'init', array('RBPlugin_App', 'rewrite_slugs') ); // Define Paths
 
-
-	// DATA
-	// TODO
-		//add_action('arez_webbooker_update_check', 'arez_update_webbookers');
-*/
 
 /*
  * Hooks
