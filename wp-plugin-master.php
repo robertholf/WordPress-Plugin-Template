@@ -5,9 +5,9 @@ Plugin URI: http://rbplugin.com
 Description: Example plugin.
 Author: bertholf
 Author URI: http://rob.bertholf.com
-Version: 3.0
+Version: 1.0
 */
-$RBPlugin_VERSION = "3.0";
+$RBPlugin_VERSION = "1.0";
 /*
 License: None
 */
@@ -36,7 +36,7 @@ License: None
  */
 
 	// Version
-	define( 'RBPlugin_VERSION', $RBPlugin_VERSION ); // e.g. 3.0
+	define( 'RBPlugin_VERSION', $RBPlugin_VERSION );
 	// WordPress Version
 	define( 'RBPlugin_VERSION_WP_MIN', '3.2' );
 	// Paths
